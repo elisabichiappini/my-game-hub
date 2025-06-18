@@ -4,6 +4,9 @@ import './GameCard.css';
 
 
 function GameCard({ videogame }) {
+    const [showDetails, setShowDetails] = useState(false);
+    const handleToggle = () => setShowDetails(v => !v);
+
     return (
         <div className="card-style">
             <img src={videogame.coverUrl} alt={videogame.titolo} />
@@ -12,6 +15,18 @@ function GameCard({ videogame }) {
                 <h5>{videogame.genere}</h5>
                 <h6 className={videogame.stato}>{videogame.stato}</h6>
                 <p className={getVoteClass(videogame.voto)}>{videogame.voto}</p>
+        
+                {
+                    showDetails && (
+                        <div className="details-style">
+                            <span>{videogame.piattaforma}</span>
+                            <span>{videogame.annoUscita}</span>
+                            <div>{videogame.prezzo}€</div>
+                            <span>{videogame.oreGiocate} ore giocate</span>
+                            <span>{videogame.difficolta}</span>
+                        </div>
+                    )
+                }
             </div>
         </div>
     )
