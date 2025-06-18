@@ -34,6 +34,7 @@
 .card-style:hover {
     background-color: rgb(206, 121, 133);
     color: #520707;
+    transform: translateY(-5px);
 }
 
 .cover-style {
