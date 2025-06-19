@@ -1,12 +1,19 @@
 .green, .yellow, .red {
     font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 8px;
+    font-size: 1.5rem;
 }
 
-.green { color: #27ae60; }
-.yellow { color: #f1c40f; }
-.red { color: #e74c3c; }
+.green { 
+    color: #10773b;
+}
+
+.yellow { 
+    color: #e1b60a;
+}
+
+.red { 
+    color: #e74c3c;
+}
 
 .completato, .in-corso, .wishlist, .abbandonato {
     display: inline-block;
@@ -14,13 +21,23 @@
     border-radius: 8px;
     color: white;
     font-weight: bold;
-    margin-top: 8px;
 }
 
-.completato { background-color: #10773b; }
-.in-corso { background-color: #e1b60a; }
-.wishlist { background-color: #064699; }
-.abbandonato { background-color: #626f70; }
+.completato { 
+    background-color: #10773b;
+ }
+
+.in-corso { 
+    background-color: #e1b60a;
+ }
+
+.wishlist { 
+    background-color: #064699;
+ }
+
+.abbandonato { 
+    background-color: #626f70;
+ }
 
 .card-style {
     background-color: #520707;
@@ -29,12 +46,13 @@
     width: 300px;
     color: rgb(206, 121, 133);
     transition: background-color, color 1s ease;
+    padding: 8px 0;
 }
 
 .card-style:hover {
     background-color: rgb(206, 121, 133);
     color: #520707;
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
 }
 
 .cover-style {
@@ -43,8 +61,3 @@
     object-fit: cover;
     display: block;
 }
-
-.content-style { 
-    padding: 8px;
-}
-
